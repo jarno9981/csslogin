@@ -1,0 +1,36 @@
+/* Tweak series/movie/album title screen */
+
+.detailSectionContent {
+    max-width: 66em;
+}
+
+.trackSelections {
+    max-width: 22em;
+}
+
+.detailLogo {
+    display: none;
+}
+
+.detailPagePrimaryContainer {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+/* Update the background and add a subtle glow to the detailRibbon */
+.layout-desktop .detailRibbon {
+    background: rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); /* Red glow effect */
+    transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+/* Hide itemBackdrop on screens larger than 32em */
+@media all and (min-width: 32em) {
+    .itemBackdrop {
+        display: none;
+    }
+
+    /* Adjust margin for detailRibbon on desktop layout */
+    .layout-desktop .detailRibbon {
+        margin-top: 10vh;
+    }
+}
