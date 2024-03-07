@@ -1,0 +1,26 @@
+#itemDetailPage .itemProgressBar,
+#indexPage .itemProgressBar {
+    height: 2000em;
+    background: #0000;
+    /* Add a glowing effect using box-shadow */
+    box-shadow: 0 0 10px rgba(var(--accent), 0.8);
+}
+
+.innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
+    background: rgba(0, 0, 0, 0);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    /* Update borders, padding, and box-shadow for a modern look */
+    border: 1px solid rgba(var(--accent), 0.5);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.itemProgressBarForeground {
+    background-color: rgba(var(--accent), 0.35);
+    /* Add a glowing effect to the foreground element as well */
+    box-shadow: 0 0 10px rgba(var(--accent), 0.8);
+}
